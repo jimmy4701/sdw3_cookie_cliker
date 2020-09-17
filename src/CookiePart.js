@@ -13,9 +13,9 @@ const CookiePart = () => {
         }
     }
 
-    return <div>
-        <p>Nombre de cookies : {cookie_counter}</p>
-        <p>Cookies par seconde: 0</p>
+    return <div className="cookie-part">
+        <p class="cookie-counter">Nombre de cookies : {cookie_counter}</p>
+        <p class="cookie-per-second">Cookies par seconde: 0</p>
         <p onClick={removeCookie}>Manger un cookie</p>
         <img 
             src="https://image.flaticon.com/icons/png/512/614/614131.png"

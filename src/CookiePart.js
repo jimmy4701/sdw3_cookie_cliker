@@ -14,14 +14,18 @@ const CookiePart = () => {
     }
 
     return <div className="cookie-part">
-        <p class="cookie-counter">Nombre de cookies : {cookie_counter}</p>
-        <p class="cookie-per-second">Cookies par seconde: 0</p>
+        <div className="cookie-container">
+            <p className="cookie-counter">Nombre de cookies : {cookie_counter}</p>
+            <p className="cookie-per-second">Cookies par seconde: 0</p>
+        </div>
         <p onClick={removeCookie}>Manger un cookie</p>
-        <img 
-            src="https://image.flaticon.com/icons/png/512/614/614131.png"
-            alt="big cookie"
-            onClick={addCookie}
-        />
+        <div className="image-container">
+            <img 
+                src="https://image.flaticon.com/icons/png/512/614/614131.png"
+                alt="big cookie"
+                onClick={addCookie}
+            />
+        </div>
     </div>
 }
 
